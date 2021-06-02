@@ -1,0 +1,154 @@
+@charset "utf-8";
+    @font-face {
+        font-family: Font-cabecalho;
+        src: url();
+    }
+    body{
+        background-color: aqua;
+        text-align: justify;
+    }
+
+    .foto{
+        border: 4px solid black;
+        box-shadow: 1px 1px 3px black;
+        position: relative;
+        width: 400px;
+        height: 450px;
+    }
+
+    .foto img{
+        width: 100%;
+        height: 100%; 
+    }
+
+    .foto figcaption{
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.253);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding:5px;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    .foto:hover figcaption{
+        opacity: 1;
+    }
+    img#icone{
+        position: absolute;
+        left: 1070px;
+        top: 90px;
+        width: 200px;
+        height: 200px;
+    }
+
+    header#cabecalho{
+        border-bottom: 1px solid black;
+        height: 400px;
+        background: url(../imagens/amuleto.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    header#cabecalho h1{
+        margin-bottom: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 30pt;
+        color: aqua;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
+    }
+
+    header#cabecalho h2{
+        margin-top: 0px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        color: tomato;
+    }
+
+    .corpo{
+        display:block;
+        width: 990px;
+        float: left;
+        border-right: 1px solid black;
+        padding-right: 15px;
+    }
+
+    .lateral{
+        display: block;
+        width: 200px;
+        float: right;
+        background-color: violet;
+    }
+
+    .rodape{
+        clear:both;
+        border-top: 1px solid black;
+    }
+
+    .rodape p{
+        text-align: center;
+    }
+
+    .tabela{
+        width:80px;
+        border: 1px solid black;
+        border-spacing:0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabela td{
+        border: 1px solid black;
+        padding: 4px;
+        text-align:center;
+        vertical-align:middle;
+    }
+
+    .noticia-principal{
+        font-size: 30pt;
+        color:blue;
+        background-color:green;
+        padding: 4px 0px 5px 0px;
+        margin: 10px 0px 4px 0px;
+    }
+
+    a{
+        color: red;
+        text-decoration:none;
+    }
+
+    a{
+        text-decoration: underline;
+    }
+
+    .tabela td.pr{
+        color: green;
+        background-color:rgba(0, 0, 0, 0.253);
+        vertical-align: top;
+        font-weight: bold;
+    }
+
+    .tabela td.pc{
+        color: rgb(0, 113, 128);
+        background-color:rgba(199, 248, 85, 0.171);
+        vertical-align: top;
+        font-weight: bold;
+    }
+
+    .tabela caption{
+        color:red;
+        font-size:20pt;
+        font-weight:bolder;
+    }
+
+    .tabela caption span{
+        display: block;
+        float: right;
+        color:blue;
+        font-size:2pt; 
+        margin-top:10px;
+    }
